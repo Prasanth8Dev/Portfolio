@@ -1,4 +1,3 @@
-Hey i need to create a portfolio in github. so i have the code help me to add it github
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +6,7 @@ Hey i need to create a portfolio in github. so i have the code help me to add it
   <title>Prasanth S | iOS Developer Portfolio</title>
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <style>
     body {
       margin: 0;
@@ -14,6 +14,7 @@ Hey i need to create a portfolio in github. so i have the code help me to add it
       background-color: #0d1117;
       color: #c9d1d9;
       line-height: 1.6;
+      scroll-behavior: smooth;
     }
     header {
       background: #161b22;
@@ -41,6 +42,9 @@ Hey i need to create a portfolio in github. so i have the code help me to add it
       color: #58a6ff;
       text-decoration: none;
     }
+    a:hover {
+      text-decoration: underline;
+    }
     .typing {
       font-size: 1.2rem;
       color: #8b949e;
@@ -50,52 +54,99 @@ Hey i need to create a portfolio in github. so i have the code help me to add it
       padding: 2rem;
       color: #8b949e;
     }
+    .icon-links a {
+      margin: 0 10px;
+      color: #58a6ff;
+      font-size: 1.5rem;
+      transition: transform 0.3s;
+    }
+    .icon-links a:hover {
+      transform: scale(1.2);
+    }
+    .skill-bar {
+      background: #30363d;
+      border-radius: 5px;
+      overflow: hidden;
+      margin-bottom: 10px;
+    }
+    .skill-bar-fill {
+      height: 20px;
+      background: #58a6ff;
+      line-height: 20px;
+      padding-left: 10px;
+      color: #000;
+    }
+    .apple-icon {
+      font-size: 2rem;
+      color: #fff;
+      vertical-align: middle;
+    }
+    .exp-card {
+      background: #161b22;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 6px;
+    }
   </style>
 </head>
 <body>
 
-  <header data-aos="fade-down">
-    <h1>Hi, I'm Prasanth S 👋</h1>
-    <p class="typing">iOS Developer | Swift, UIKit, SwiftUI, VIPER</p>
+  <header data-aos="zoom-in">
+    <h1><i class="fab fa-apple apple-icon"></i> Hi, I'm Prasanth S 👋</h1>
+    <p class="typing">iOS Developer | Swift, UIKit, SwiftUI, MVVM, VIPER</p>
     <p>📍 Chennai, India | <a href="mailto:prasanth08.ios@gmail.com">prasanth08.ios@gmail.com</a></p>
-    <p><a href="https://github.com/Prasanth8Dev" target="_blank">GitHub</a> • <a href="https://www.linkedin.com/in/prasanth-s-3168341b2/" target="_blank">LinkedIn</a></p>
+    <div class="icon-links">
+      <a href="https://github.com/Prasanth8Dev" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/prasanth-s-3168341b2/" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
   </header>
 
   <div class="container">
+
+    <section data-aos="fade-up">
+      <h2>👨‍💻 About Me</h2>
+      <p>I’m a passionate iOS Developer with 3+ years of experience building production-ready apps using Swift, UIKit, and SwiftUI. I follow clean architecture principles like MVVM and VIPER and have experience publishing apps to the App Store with CI/CD workflows.</p>
+    </section>
+
     <section data-aos="fade-up">
       <h2>🛠️ Skills</h2>
-      <ul>
-        <li>Languages: Swift, Objective-C, JavaScript</li>
-        <li>Frameworks: SwiftUI, UIKit, Combine, CoreData</li>
-        <li>Architecture: MVC, MVVM, VIPER, Coordinator</li>
-        <li>CI/CD: Xcode Cloud, TestFlight, Jenkins</li>
-        <li>Tools: Git, Sourcetree, Firebase, Intercom, Klaviyo, Shopify SDK</li>
-      </ul>
+      <div class="skill-bar">
+        <div class="skill-bar-fill" style="width: 90%;">Swift</div>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-bar-fill" style="width: 80%;">SwiftUI / UIKit</div>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-bar-fill" style="width: 70%;">VIPER / MVVM</div>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-bar-fill" style="width: 60%;">CI/CD (Xcode Cloud, Jenkins)</div>
+      </div>
     </section>
 
     <section data-aos="fade-up">
       <h2>🚀 Projects</h2>
 
-      <div class="project">
+      <div class="project" data-aos="zoom-in">
         <h3>SIMATS Transport App</h3>
         <p>📱 University bus pass manager with secure payment and QR verification</p>
         <p><strong>Tech:</strong> Swift, MVVM, Firebase, Alamofire</p>
         <a href="https://apps.apple.com/in/app/simats-transport/idXXXXXX">App Store Link</a>
       </div>
 
-      <div class="project">
+      <div class="project" data-aos="zoom-in">
         <h3>Saveetha 360 (HRMS App)</h3>
         <p>👨‍💼 Payroll and leave manager using VIPER architecture</p>
         <p><strong>Tech:</strong> Swift, VIPER, Combine, MySQL, Node.js</p>
       </div>
 
-      <div class="project">
+      <div class="project" data-aos="zoom-in">
         <h3>PCOS Tracker</h3>
         <p>⚕️ Symptom tracking app for PCOS with medication alerts</p>
         <a href="https://apps.apple.com/us/app/pcos/id6717590279">App Store Link</a>
       </div>
 
-      <div class="project">
+      <div class="project" data-aos="zoom-in">
         <h3>MediQuizPro</h3>
         <p>📘 Quiz app for dermatopathology learners</p>
         <a href="https://apps.apple.com/us/app/mediquizpro/id6705128854">App Store Link</a>
@@ -104,8 +155,14 @@ Hey i need to create a portfolio in github. so i have the code help me to add it
 
     <section data-aos="fade-up">
       <h2>📚 Experience</h2>
-      <p><strong>Saveetha School of Engineering</strong> – iOS Developer (2024–Present)</p>
-      <p><strong>Vajro</strong> – Software Development Engineer I (2021–2024)</p>
+      <div class="exp-card" data-aos="fade-right">
+        <p><strong>Saveetha School of Engineering</strong><br/>iOS Developer (2024–Present)</p>
+        <p>Developed multiple in-house apps for campus services using VIPER architecture and Firebase integrations.</p>
+      </div>
+      <div class="exp-card" data-aos="fade-right">
+        <p><strong>Vajro</strong><br/>Software Development Engineer I (2021–2024)</p>
+        <p>Worked on E-commerce mobile platforms with Shopify SDK and implemented deep linking and performance improvements.</p>
+      </div>
     </section>
 
     <section data-aos="fade-up">
@@ -113,10 +170,11 @@ Hey i need to create a portfolio in github. so i have the code help me to add it
       <p>Email: <a href="mailto:prasanth08.ios@gmail.com">prasanth08.ios@gmail.com</a></p>
       <p>Phone: +91 9791031382</p>
     </section>
+
   </div>
 
-  <div class="footer">
-    © 2025 Prasanth S • Built with HTML + JS
+  <div class="footer" data-aos="fade-up">
+    © 2025 Prasanth S • Built with HTML, AOS & ❤️
   </div>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -140,4 +198,3 @@ Hey i need to create a portfolio in github. so i have the code help me to add it
 
 </body>
 </html>
-
