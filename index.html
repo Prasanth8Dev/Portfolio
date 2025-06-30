@@ -1,0 +1,143 @@
+Hey i need to create a portfolio in github. so i have the code help me to add it github
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prasanth S | iOS Developer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Fira Code', monospace;
+      background-color: #0d1117;
+      color: #c9d1d9;
+      line-height: 1.6;
+    }
+    header {
+      background: #161b22;
+      padding: 2rem;
+      text-align: center;
+    }
+    h1, h2 {
+      color: #58a6ff;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+    section {
+      margin-bottom: 4rem;
+    }
+    .project {
+      background: #161b22;
+      padding: 1rem;
+      border-left: 4px solid #58a6ff;
+      margin-bottom: 1rem;
+    }
+    a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+    .typing {
+      font-size: 1.2rem;
+      color: #8b949e;
+    }
+    .footer {
+      text-align: center;
+      padding: 2rem;
+      color: #8b949e;
+    }
+  </style>
+</head>
+<body>
+
+  <header data-aos="fade-down">
+    <h1>Hi, I'm Prasanth S 👋</h1>
+    <p class="typing">iOS Developer | Swift, UIKit, SwiftUI, VIPER</p>
+    <p>📍 Chennai, India | <a href="mailto:prasanth08.ios@gmail.com">prasanth08.ios@gmail.com</a></p>
+    <p><a href="https://github.com/Prasanth8Dev" target="_blank">GitHub</a> • <a href="https://www.linkedin.com/in/prasanth-s-3168341b2/" target="_blank">LinkedIn</a></p>
+  </header>
+
+  <div class="container">
+    <section data-aos="fade-up">
+      <h2>🛠️ Skills</h2>
+      <ul>
+        <li>Languages: Swift, Objective-C, JavaScript</li>
+        <li>Frameworks: SwiftUI, UIKit, Combine, CoreData</li>
+        <li>Architecture: MVC, MVVM, VIPER, Coordinator</li>
+        <li>CI/CD: Xcode Cloud, TestFlight, Jenkins</li>
+        <li>Tools: Git, Sourcetree, Firebase, Intercom, Klaviyo, Shopify SDK</li>
+      </ul>
+    </section>
+
+    <section data-aos="fade-up">
+      <h2>🚀 Projects</h2>
+
+      <div class="project">
+        <h3>SIMATS Transport App</h3>
+        <p>📱 University bus pass manager with secure payment and QR verification</p>
+        <p><strong>Tech:</strong> Swift, MVVM, Firebase, Alamofire</p>
+        <a href="https://apps.apple.com/in/app/simats-transport/idXXXXXX">App Store Link</a>
+      </div>
+
+      <div class="project">
+        <h3>Saveetha 360 (HRMS App)</h3>
+        <p>👨‍💼 Payroll and leave manager using VIPER architecture</p>
+        <p><strong>Tech:</strong> Swift, VIPER, Combine, MySQL, Node.js</p>
+      </div>
+
+      <div class="project">
+        <h3>PCOS Tracker</h3>
+        <p>⚕️ Symptom tracking app for PCOS with medication alerts</p>
+        <a href="https://apps.apple.com/us/app/pcos/id6717590279">App Store Link</a>
+      </div>
+
+      <div class="project">
+        <h3>MediQuizPro</h3>
+        <p>📘 Quiz app for dermatopathology learners</p>
+        <a href="https://apps.apple.com/us/app/mediquizpro/id6705128854">App Store Link</a>
+      </div>
+    </section>
+
+    <section data-aos="fade-up">
+      <h2>📚 Experience</h2>
+      <p><strong>Saveetha School of Engineering</strong> – iOS Developer (2024–Present)</p>
+      <p><strong>Vajro</strong> – Software Development Engineer I (2021–2024)</p>
+    </section>
+
+    <section data-aos="fade-up">
+      <h2>📫 Contact</h2>
+      <p>Email: <a href="mailto:prasanth08.ios@gmail.com">prasanth08.ios@gmail.com</a></p>
+      <p>Phone: +91 9791031382</p>
+    </section>
+  </div>
+
+  <div class="footer">
+    © 2025 Prasanth S • Built with HTML + JS
+  </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+    // Typing effect
+    const text = "iOS Developer | Swift, UIKit, SwiftUI, VIPER";
+    let i = 0;
+    const speed = 80;
+    function typeWriter() {
+      if (i < text.length) {
+        document.querySelector(".typing").textContent += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+    document.querySelector(".typing").textContent = "";
+    typeWriter();
+  </script>
+
+</body>
+</html>
+
