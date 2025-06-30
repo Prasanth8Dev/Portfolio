@@ -7,90 +7,129 @@
   <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
   <style>
     body {
       margin: 0;
       font-family: 'Fira Code', monospace;
-      background-color: #0d1117;
-      color: #c9d1d9;
+      background: linear-gradient(120deg, #0f0c29, #302b63, #24243e);
+      color: #e0e0e0;
       line-height: 1.6;
       scroll-behavior: smooth;
     }
+
     header {
-      background: #161b22;
+      background: rgba(20, 20, 35, 0.9);
       padding: 2rem;
       text-align: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
     }
+
     h1, h2 {
-      color: #58a6ff;
+      color: #80ffdb;
+      text-shadow: 0 0 5px rgba(128, 255, 219, 0.6);
     }
+
+    h3 {
+      color: #adb5bd;
+    }
+
     .container {
       max-width: 900px;
       margin: auto;
       padding: 2rem;
     }
+
     section {
       margin-bottom: 4rem;
     }
+
     .project {
-      background: #161b22;
+      background: rgba(25, 25, 40, 0.8);
       padding: 1rem;
-      border-left: 4px solid #58a6ff;
-      margin-bottom: 1rem;
+      border-left: 4px solid #64dfdf;
+      margin-bottom: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(100, 223, 223, 0.2);
+      transition: transform 0.3s ease;
     }
+
+    .project:hover {
+      transform: scale(1.02);
+    }
+
     a {
-      color: #58a6ff;
+      color: #64dfdf;
       text-decoration: none;
+      transition: all 0.3s ease;
     }
+
     a:hover {
-      text-decoration: underline;
+      color: #80ffdb;
+      text-shadow: 0 0 10px #80ffdb;
     }
+
     .typing {
       font-size: 1.2rem;
-      color: #8b949e;
+      color: #adb5bd;
     }
+
     .footer {
       text-align: center;
       padding: 2rem;
-      color: #8b949e;
+      color: #868e96;
+      background-color: #161b22;
     }
+
     .icon-links a {
       margin: 0 10px;
-      color: #58a6ff;
-      font-size: 1.5rem;
+      color: #64dfdf;
+      font-size: 1.6rem;
       transition: transform 0.3s;
     }
+
     .icon-links a:hover {
-      transform: scale(1.2);
+      transform: scale(1.3);
+      color: #80ffdb;
     }
+
     .skill-bar {
-      background: #30363d;
+      background: #343a40;
       border-radius: 5px;
       overflow: hidden;
       margin-bottom: 10px;
+      box-shadow: inset 0 0 5px #222;
     }
+
     .skill-bar-fill {
       height: 20px;
-      background: #58a6ff;
+      background: linear-gradient(90deg, #64dfdf, #80ffdb);
       line-height: 20px;
       padding-left: 10px;
       color: #000;
+      font-weight: bold;
+      text-shadow: 1px 1px #fff;
+      transition: width 1s ease-out;
     }
+
     .apple-icon {
       font-size: 2rem;
       color: #fff;
       vertical-align: middle;
     }
+
     .exp-card {
-      background: #161b22;
+      background: rgba(35, 35, 50, 0.9);
       padding: 1rem;
       margin-bottom: 1rem;
       border-radius: 6px;
+      border-left: 4px solid #80ffdb;
+      box-shadow: 0 4px 8px rgba(128, 255, 219, 0.1);
     }
   </style>
 </head>
-<body>
 
+<body>
   <header data-aos="zoom-in">
     <h1><i class="fab fa-apple apple-icon"></i> Hi, I'm Prasanth S 👋</h1>
     <p class="typing">iOS Developer | Swift, UIKit, SwiftUI, MVVM, VIPER</p>
@@ -102,47 +141,45 @@
   </header>
 
   <div class="container">
-
     <section data-aos="fade-up">
       <h2>👨‍💻 About Me</h2>
       <p>I’m a passionate iOS Developer with 3+ years of experience building production-ready apps using Swift, UIKit, and SwiftUI. I follow clean architecture principles like MVVM and VIPER and have experience publishing apps to the App Store with CI/CD workflows.</p>
     </section>
 
     <section data-aos="fade-up">
-  <h2>🛠️ Skills</h2>
+      <h2>🛠️ Skills</h2>
 
-  <!-- Languages -->
-  <h3 style="color:#8b949e;">Languages</h3>
-  <div class="skill-bar"><div class="skill-bar-fill" style="width: 90%;">Swift, Objective-C</div></div>
-  <div class="skill-bar"><div class="skill-bar-fill" style="width: 70%;">JavaScript</div></div>
+      <!-- Languages -->
+      <h3>Languages</h3>
+      <div class="skill-bar"><div class="skill-bar-fill" style="width: 90%;">Swift, Objective-C</div></div>
+      <div class="skill-bar"><div class="skill-bar-fill" style="width: 70%;">JavaScript</div></div>
 
-  <!-- Frameworks & Architecture -->
-  <h3 style="color:#8b949e;">Frameworks & Architecture</h3>
-  <div class="skill-bar"><div class="skill-bar-fill" style="width: 85%;">SwiftUI / UIKit</div></div>
-  <div class="skill-bar"><div class="skill-bar-fill" style="width: 80%;">MVVM / VIPER / MVC / Coordinator</div></div>
-  <div class="skill-bar"><div class="skill-bar-fill" style="width: 70%;">Combine </div></div>
+      <!-- Frameworks & Architecture -->
+      <h3>Frameworks & Architecture</h3>
+      <div class="skill-bar"><div class="skill-bar-fill" style="width: 85%;">SwiftUI / UIKit</div></div>
+      <div class="skill-bar"><div class="skill-bar-fill" style="width: 80%;">MVVM / VIPER / MVC / Coordinator</div></div>
+      <div class="skill-bar"><div class="skill-bar-fill" style="width: 70%;">Combine</div></div>
 
-  <!-- API & Networking -->
-  <h3 style="color:#8b949e;">API & Networking</h3>
-  <div class="skill-bar"><div class="skill-bar-fill" style="width: 75%;">REST API / URLSession / Alamofire</div></div>
-  <div class="skill-bar"><div class="skill-bar-fill" style="width: 65%;">WebView / JSON Handling</div></div>
+      <!-- API & Networking -->
+      <h3>API & Networking</h3>
+      <div class="skill-bar"><div class="skill-bar-fill" style="width: 75%;">REST API / URLSession / Alamofire</div></div>
+      <div class="skill-bar"><div class="skill-bar-fill" style="width: 65%;">WebView / JSON Handling</div></div>
 
-  <!-- Tools & CI/CD -->
-  <h3 style="color:#8b949e;">Tools</h3>
-  <div class="skill-bar"><div class="skill-bar-fill" style="width: 70%;">Xcode Cloud</div></div>
-  <div class="skill-bar"><div class="skill-bar-fill" style="width: 80%;">Git / GitHub / Sourcetree</div></div>
+      <!-- Tools & CI/CD -->
+      <h3>Tools</h3>
+      <div class="skill-bar"><div class="skill-bar-fill" style="width: 70%;">Xcode Cloud</div></div>
+      <div class="skill-bar"><div class="skill-bar-fill" style="width: 80%;">Git / GitHub / Sourcetree</div></div>
 
-  <!-- Third-party SDKs -->
-  <h3 style="color:#8b949e;">Third-party SDKs</h3>
-  <div class="skill-bar"><div class="skill-bar-fill" style="width: 70%;">Firebase / Intercom / Shopify SDK</div></div>
-  <div class="skill-bar"><div class="skill-bar-fill" style="width: 65%;">Klaviyo / WebEngage / Flurry</div></div>
+      <!-- Third-party SDKs -->
+      <h3>Third-party SDKs</h3>
+      <div class="skill-bar"><div class="skill-bar-fill" style="width: 70%;">Firebase / Intercom / Shopify SDK</div></div>
+      <div class="skill-bar"><div class="skill-bar-fill" style="width: 65%;">Klaviyo / WebEngage / Flurry</div></div>
 
-  <!-- Deployment -->
-  <h3 style="color:#8b949e;">Deployment</h3>
-  <div class="skill-bar"><div class="skill-bar-fill" style="width: 75%;">App Store Submission / App Store Connect</div></div>
-  <div class="skill-bar"><div class="skill-bar-fill" style="width: 70%;">Deep Linking / URL Schemes</div></div>
-</section>
-
+      <!-- Deployment -->
+      <h3>Deployment</h3>
+      <div class="skill-bar"><div class="skill-bar-fill" style="width: 75%;">App Store Submission / App Store Connect</div></div>
+      <div class="skill-bar"><div class="skill-bar-fill" style="width: 70%;">Deep Linking / URL Schemes</div></div>
+    </section>
 
     <section data-aos="fade-up">
       <h2>🚀 Projects</h2>
@@ -190,7 +227,6 @@
       <p>Email: <a href="mailto:prasanth08.ios@gmail.com">prasanth08.ios@gmail.com</a></p>
       <p>Phone: +91 9791031382</p>
     </section>
-
   </div>
 
   <div class="footer" data-aos="fade-up">
@@ -215,6 +251,5 @@
     document.querySelector(".typing").textContent = "";
     typeWriter();
   </script>
-
 </body>
 </html>
